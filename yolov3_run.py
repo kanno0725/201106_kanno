@@ -1,10 +1,11 @@
+# import
 from darkflow.net.build import TFNet
 import cv2
 import numpy as np
 
+# select model
 options1 = {"model": "cfg/tiny-yolo-voc.cfg", "load": "bin/tiny-yolo-voc.weights", "threshold": 0.1}
 options2 = {"model": "cfg/yolo.cfg", "load": "bin/yolo.weights", "threshold": 0.1}
-
 
 tfnet = TFNet(options2)
 
